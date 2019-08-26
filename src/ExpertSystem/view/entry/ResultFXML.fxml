@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExpertSystem.view.entry.ResultFXMLController">
+   <children>
+      <Button layoutX="800.0" layoutY="32.0" maxHeight="35.0" maxWidth="150.0" minHeight="35.0" minWidth="150.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="35.0" prefWidth="150.0" text="Powrót do Menu" />
+      <Button layoutX="50.0" layoutY="32.0" maxHeight="35.0" maxWidth="150.0" minHeight="35.0" minWidth="150.0" mnemonicParsing="false" onAction="#handleBackToEntry" prefHeight="35.0" prefWidth="150.0" text="Wróć do formularza" />
+      <ImageView fx:id="polska" fitHeight="700.0" fitWidth="900.0" layoutX="50.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/polska.jpg" />
+         </image></ImageView>
+      <Button fx:id="zakopaneButton" layoutX="527.0" layoutY="722.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Zakopane" />
+      <Button fx:id="gdanskButton" layoutX="424.0" layoutY="122.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Gdańsk" />
+      <Button fx:id="mikolajkiButton" layoutX="677.0" layoutY="185.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Mikołajki" />
+      <Button fx:id="radomButton" layoutX="641.0" layoutY="476.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Radom" />
+      <Button fx:id="ciechocinekButton" layoutX="435.0" layoutY="305.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Ciechocinek" />
+      <Button fx:id="wloclawekButton" layoutX="463.0" layoutY="340.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Włocławek" />
+      <Button fx:id="gizyckoButton" layoutX="640.0" layoutY="198.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Giżycko" />
+      <Button fx:id="kazimierzButton" layoutX="699.0" layoutY="501.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Kazimierz Dolny" />
+      <Button fx:id="turekButton" layoutX="429.0" layoutY="388.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Turek" />
+      <Button fx:id="lublinButton" layoutX="784.0" layoutY="489.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Lublin" />
+      <Button fx:id="sandomierzButton" layoutX="670.0" layoutY="590.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Sandomierz" />
+      <Button fx:id="krakowButton" layoutX="534.0" layoutY="635.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Kraków" />
+      <Button fx:id="warszawaButton" layoutX="626.0" layoutY="377.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Warszawa" />
+      <Button fx:id="lodzButton" layoutX="513.0" layoutY="439.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Łódź" />
+      <Button fx:id="wieliczkaButton" layoutX="556.0" layoutY="648.0" maxHeight="30.0" maxWidth="105.0" minHeight="30.0" minWidth="105.0" mnemonicParsing="false" onAction="#handleDetails" prefHeight="30.0" prefWidth="105.0" text="Wieliczka" />
+   </children>
+</AnchorPane>

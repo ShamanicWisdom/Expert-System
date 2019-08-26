@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExpertSystem.view.entry.QuestionPanelFXMLController">
+   <children>
+      <Button layoutX="30.0" layoutY="50.0" maxHeight="35.0" maxWidth="140.0" minHeight="35.0" minWidth="140.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="35.0" prefWidth="140.0" text="Powrót do Menu" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="50.0" />
+      <Slider fx:id="slider1" blockIncrement="1.0" layoutX="198.0" layoutY="65.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="15.0" prefWidth="600.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="70.0" />
+      <Label fx:id="question1" layoutX="198.0" layoutY="26.0" prefHeight="17.0" prefWidth="404.0" text="W jakim stopniu lubisz huczne imprezowanie? ( 1 - wcale, 10 - bardzo)" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button fx:id="goToQuestion2" layoutX="823.0" layoutY="50.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#handleQuestion2" prefHeight="35.0" prefWidth="70.0" text="Dalej" AnchorPane.leftAnchor="825.0" AnchorPane.topAnchor="50.0" />
+      <Button fx:id="backToQuestion1" layoutX="115.0" layoutY="122.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#backToQuestion1" prefHeight="35.0" prefWidth="70.0" text="Cofnij" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="125.0" />
+      <Label fx:id="question2" layoutX="198.0" layoutY="104.0" prefHeight="17.0" prefWidth="404.0" text="Jak bardzo dbasz o koszt wypoczynku? (1 - wcale, 10 - bardzo)" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Slider fx:id="slider2" blockIncrement="1.0" layoutX="198.0" layoutY="139.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="15.0" prefWidth="600.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="145.0" />
+      <Slider fx:id="slider3" blockIncrement="1.0" layoutX="198.0" layoutY="215.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="15.0" prefWidth="600.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="220.0" />
+      <Label fx:id="question3" layoutX="198.0" layoutY="180.0" prefHeight="17.0" prefWidth="485.0" text="Wypoczynek wśród dzikiej przyrody, czy w mieście? (1 - dzika przyroda, 10 - miasto)" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="backToQuestion2" layoutX="115.0" layoutY="198.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#backToQuestion2" prefHeight="35.0" prefWidth="70.0" text="Cofnij" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="200.0" />
+      <Button fx:id="goToQuestion3" layoutX="693.0" layoutY="122.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#handleQuestion3" prefHeight="35.0" prefWidth="70.0" text="Dalej" AnchorPane.leftAnchor="825.0" AnchorPane.topAnchor="125.0" />
+      <Button fx:id="goToQuestion4" layoutX="693.0" layoutY="198.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#handleQuestion4" prefHeight="35.0" prefWidth="70.0" text="Dalej" AnchorPane.leftAnchor="825.0" AnchorPane.topAnchor="200.0" />
+      <Button fx:id="backToQuestion3" layoutX="115.0" layoutY="280.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#backToQuestion3" prefHeight="35.0" prefWidth="70.0" text="Cofnij" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="275.0" />
+      <Button fx:id="backToQuestion4" layoutX="115.0" layoutY="358.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#backToQuestion4" prefHeight="35.0" prefWidth="70.0" text="Cofnij" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="350.0" />
+      <Button fx:id="backToQuestion5" layoutX="115.0" layoutY="426.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#backToQuestion5" prefHeight="35.0" prefWidth="70.0" text="Cofnij" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="425.0" />
+      <Button fx:id="backToQuestion6" layoutX="115.0" layoutY="492.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#backToQuestion6" prefHeight="35.0" prefWidth="70.0" text="Cofnij" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="500.0" />
+      <Button fx:id="backToQuestion7" layoutX="115.0" layoutY="560.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#backToQuestion7" prefHeight="35.0" prefWidth="70.0" text="Cofnij" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="575.0" />
+      <Button fx:id="backToQuestion8" layoutX="115.0" layoutY="622.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#backToQuestion8" prefHeight="35.0" prefWidth="70.0" text="Cofnij" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="650.0" />
+      <Button fx:id="backToQuestion9" layoutX="115.0" layoutY="692.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#backToQuestion9" prefHeight="35.0" prefWidth="70.0" text="Cofnij" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="725.0" />
+      <Slider fx:id="slider4" blockIncrement="1.0" layoutX="200.0" layoutY="260.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="15.0" prefWidth="600.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="295.0" />
+      <Button fx:id="goToQuestion5" layoutX="825.0" layoutY="275.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#handleQuestion5" prefHeight="35.0" prefWidth="70.0" text="Dalej" AnchorPane.leftAnchor="825.0" AnchorPane.topAnchor="275.0" />
+      <Label fx:id="question4" layoutX="208.0" layoutY="190.0" prefHeight="17.0" prefWidth="404.0" text="Morze, czy góry? (1 - definitywnie morze, 10 - definitywnie góry)" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Slider fx:id="slider5" blockIncrement="1.0" layoutX="210.0" layoutY="270.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="15.0" prefWidth="600.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="370.0" />
+      <Slider fx:id="slider6" blockIncrement="1.0" layoutX="220.0" layoutY="280.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="15.0" prefWidth="600.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="445.0" />
+      <Slider fx:id="slider7" blockIncrement="1.0" layoutX="220.0" layoutY="280.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="15.0" prefWidth="600.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="520.0" />
+      <Slider fx:id="slider8" blockIncrement="1.0" layoutX="230.0" layoutY="290.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="15.0" prefWidth="600.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="595.0" />
+      <Slider fx:id="slider9" blockIncrement="1.0" layoutX="230.0" layoutY="290.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="15.0" prefWidth="600.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="670.0" />
+      <Slider fx:id="slider10" blockIncrement="1.0" layoutX="240.0" layoutY="300.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="15.0" prefWidth="600.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="745.0" />
+      <Label fx:id="question5" layoutX="218.0" layoutY="200.0" prefHeight="17.0" prefWidth="404.0" text="Zwiedzanie, czy leniuchowanie? (1 - zwiedzanie, 10 - leniuchowanie)" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="325.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="question6" layoutX="228.0" layoutY="210.0" prefHeight="17.0" prefWidth="564.0" text="Jedzenie w restauracjach, czy własnoręcznie przygotowywane? (1 - restauracje, 10 - samodzielnie)" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="400.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="question7" layoutX="238.0" layoutY="220.0" prefHeight="17.0" prefWidth="572.0" text="Dostępność udogodnień rekreacyjnych na miejscu (rowery itp) (1 - nie ważne, 10 - bardzo ważne)" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="475.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="question8" layoutX="248.0" layoutY="230.0" prefHeight="17.0" prefWidth="777.0" text="Dojazd we własnym zakresie, czy komunikacja publiczna (pociąg, autobus) (1 - własny zakres, 10 - komunikacja publiczna)" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="550.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="question9" layoutX="248.0" layoutY="230.0" prefHeight="17.0" prefWidth="572.0" text="Jak bardzo potrzebujesz udogodnień w postaci Internetu, klimatyzacji? (1 - wcale, 10 - bardzo)" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="625.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="question10" layoutX="248.0" layoutY="230.0" prefHeight="17.0" prefWidth="522.0" text="Dostępność pamiątek (1 - nieistotna, 10 - bardzo ważna)" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="700.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="goToQuestion6" layoutX="825.0" layoutY="350.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#handleQuestion6" prefHeight="35.0" prefWidth="70.0" text="Dalej" AnchorPane.leftAnchor="825.0" AnchorPane.topAnchor="350.0" />
+      <Button fx:id="goToQuestion7" layoutX="825.0" layoutY="425.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#handleQuestion7" prefHeight="35.0" prefWidth="70.0" text="Dalej" AnchorPane.leftAnchor="825.0" AnchorPane.topAnchor="425.0" />
+      <Button fx:id="goToQuestion8" layoutX="825.0" layoutY="500.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#handleQuestion8" prefHeight="35.0" prefWidth="70.0" text="Dalej" AnchorPane.leftAnchor="825.0" AnchorPane.topAnchor="500.0" />
+      <Button fx:id="goToQuestion9" layoutX="825.0" layoutY="575.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#handleQuestion9" prefHeight="35.0" prefWidth="70.0" text="Dalej" AnchorPane.leftAnchor="825.0" AnchorPane.topAnchor="575.0" />
+      <Button fx:id="goToQuestion10" layoutX="825.0" layoutY="650.0" maxHeight="35.0" maxWidth="70.0" minHeight="35.0" minWidth="70.0" mnemonicParsing="false" onAction="#handleQuestion10" prefHeight="35.0" prefWidth="70.0" text="Dalej" AnchorPane.leftAnchor="825.0" AnchorPane.topAnchor="650.0" />
+      <Button fx:id="proceed" layoutX="825.0" layoutY="725.0" maxHeight="35.0" maxWidth="140.0" minHeight="35.0" minWidth="140.0" mnemonicParsing="false" onAction="#handleProceed" prefHeight="35.0" prefWidth="140.0" text="Werdykt" AnchorPane.leftAnchor="825.0" AnchorPane.topAnchor="725.0" />
+   </children>
+</AnchorPane>

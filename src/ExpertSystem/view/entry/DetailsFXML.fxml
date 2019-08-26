@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="600.0" maxWidth="700.0" minHeight="600.0" minWidth="700.0" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExpertSystem.view.entry.DetailsFXMLController">
+   <children>
+      <GridPane layoutX="455.0" layoutY="88.0" prefHeight="390.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="328.0" minWidth="52.0" prefWidth="103.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="393.0" minWidth="10.0" prefWidth="97.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Imprezy:">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label text="Kom. publiczna:" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label text="Pamiątki:" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label text="Dostępność WiFi:" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label fx:id="stat1Label" text="Label" GridPane.columnIndex="1" />
+            <Label fx:id="stat2Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="stat3Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="stat4Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="stat5Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="stat6Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="stat7Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="stat8Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="stat9Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="stat10Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label text="Koszty:" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Zurbanizowanie:" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Poziom NPM:" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Atrakcje:" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Ilość restauracji:" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Rekreacja:" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets left="10.0" right="10.0" />
+         </opaqueInsets>
+      </GridPane>
+      <Button layoutX="510.0" layoutY="491.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="35.0" prefWidth="90.0" text="OK" AnchorPane.bottomAnchor="74.0" AnchorPane.leftAnchor="510.0" />
+      <Label fx:id="entityNameLabel" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="369.0" text="Dane o mieście">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="entityPicture" fitHeight="300.0" fitWidth="400.0" layoutX="14.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" />
+      <GridPane layoutX="14.0" layoutY="57.0" prefHeight="148.0" prefWidth="400.0">
+         <children>
+            <Label text="Krótki opis:" />
+            <TextArea fx:id="entityDescriptionArea" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="100.0" prefWidth="162.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="393.0" minWidth="10.0" prefWidth="328.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="126.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label layoutX="14.0" layoutY="213.0" text="Zdjęcie:" />
+   </children>
+</AnchorPane>
